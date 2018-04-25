@@ -1,0 +1,21 @@
+x-loading {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(100, 100, 100, .5);
+  z-index: 999;
+}
+
+x-loading.visible {
+  display: block;
+}
+
+x-loading .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

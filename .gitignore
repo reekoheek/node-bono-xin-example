@@ -1,0 +1,12 @@
+# app specific
+/node_modules
+/.tmp
+/www
+/files
+/umzug.json
+/coverage
+/ui-coverage
+
+# os specific
+.DS_Store
+.nyc_output

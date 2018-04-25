@@ -1,0 +1,24 @@
+<xin-lazy-view-middleware></xin-lazy-view-middleware>
+<connect-pool id="pool" base-url="/api" headers='{
+  "Content-Type": "application/json"
+}'></connect-pool>
+
+<div class="sidebar">
+  <div class="sidebar-header d-flex align-items-center p-2">
+    <div class="avatar"><img src="../assets/img/xin.png" alt="" class="img-fluid" style="width: 72px; height: auto;"></div>
+    <div class="title ml-2">
+      <h1 class="h4" style="font-weight: 300; font-style: italic">Node Bono Xin</h1>
+      <p>Example</p>
+    </div>
+  </div>
+  <x-sidemenu></x-sidemenu>
+</div>
+<div class="rootpane">
+  <xin-pager>
+    <x-home-view lazy-view uri="/"></x-home-view>
+    <x-login-view lazy-view uri="/login"></x-login-view>
+    <x-users-view lazy-view uri="/user"></x-users-view>
+    <x-user-view lazy-view uri="/user/-/create"></x-user-view>
+    <x-user-view lazy-view uri="/user/{id}"></x-user-view>
+  </xin-pager>
+</div>

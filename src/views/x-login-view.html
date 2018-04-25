@@ -1,0 +1,43 @@
+<style>
+  x-login-view .viewport {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  x-login-view .box {
+    width: 100%;
+    max-width: 400px;
+  }
+</style>
+
+<div class="viewport">
+  <div class="box text-center m-4 p-4">
+    <div class="brand">
+      <img src="../assets/img/xin.png" alt="" style="width: 164px; height: auto;">
+      <!-- <img class="brand-img" src="../assets/images/logo.png" alt="..."> -->
+      <!-- <h2 class="brand-text">*_*</h2> -->
+    </div>
+    <p>Sign into your pages account</p>
+    <form class="text-left" (submit)="doLogin(evt)">
+      <div class="form-group">
+        <label for="inputUsername">Username</label>
+        <input type="text" class="form-control empty" id="inputUsername" name="username">
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control empty" id="inputPassword" name="password">
+      </div>
+      <div class="form-group clearfix">
+        <div class="custom-control custom-checkbox float-left">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Remember me</label>
+        </div>
+        <a class="float-right" href="forgot-password.html">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+    </form>
+    <!-- <p>Still no account? Please go to <a href="register.html">Register</a></p> -->
+  </div>
+</div>
